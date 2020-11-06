@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\pagestyle{plain}
+\usepackage[cm]{fullpage}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{array}
+
+\begin{document}
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		$a$ & $\neg a$\\ 
+		\hline
+		$F$ & $V$\\ 
+		\hline
+		$V$ & $F$\\ 
+		\hline
+\end{tabular}\end{center}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		$a$ & $b$ & $a\wedge b$\\ 
+		\hline
+		$F$ & $F$ & $F$\\ 
+		\hline
+		$F$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $F$ & $F$\\ 
+		\hline
+		$V$ & $V$ & $V$\\ 
+		\hline
+\end{tabular}\end{center}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		$a$ & $b$ & $a\vee b$\\ 
+		\hline
+		$F$ & $F$ & $F$\\ 
+		\hline
+		$F$ & $V$ & $V$\\ 
+		\hline
+		$V$ & $F$ & $V$\\ 
+		\hline
+		$V$ & $V$ & $V$\\ 
+		\hline
+\end{tabular}\end{center}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		$a$ & $b$ & $a\implies b$\\ 
+		\hline
+		$F$ & $F$ & $V$\\ 
+		\hline
+		$F$ & $V$ & $V$\\ 
+		\hline
+		$V$ & $F$ & $F$\\ 
+		\hline
+		$V$ & $V$ & $V$\\ 
+		\hline
+\end{tabular}\end{center}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		$a$ & $b$ & $a\iff b$\\ 
+		\hline
+		$F$ & $F$ & $V$\\ 
+		\hline
+		$F$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $F$ & $F$\\ 
+		\hline
+		$V$ & $V$ & $V$\\ 
+		\hline
+\end{tabular}\end{center}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline
+		$a$ & $b$ & $c$ & $a\iff b$ & $c\wedge a$ & $c\wedge b$ & $(c\wedge a)\iff (c\wedge b)$ & $(a\iff b)\implies ((c\wedge a)\iff (c\wedge b))$\\ 
+		\hline
+		$F$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$\\ 
+		\hline
+		$F$ & $F$ & $V$ & $V$ & $F$ & $F$ & $V$ & $V$\\ 
+		\hline
+		$F$ & $V$ & $F$ & $F$ & $F$ & $F$ & $V$ & $V$\\ 
+		\hline
+		$F$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$ & $V$\\ 
+		\hline
+		$V$ & $F$ & $F$ & $F$ & $F$ & $F$ & $V$ & $V$\\ 
+		\hline
+		$V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$\\ 
+		\hline
+		$V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$\\ 
+		\hline
+		$V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$\\ 
+		\hline
+\end{tabular}\end{center}
+\end{document}
