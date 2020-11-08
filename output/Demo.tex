@@ -5,22 +5,22 @@
 \usepackage{amsmath}
 \usepackage{float}
 \usepackage{array}
-
+\usepackage{graphicx}\usepackage{longtable}
 \begin{document}
-\begin{center}
-	\begin{tabular}{|c|c|}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.2333\linewidth}|>{\centering\arraybackslash}p{0.4666\linewidth}|}
 		\hline
-		$a$ & $\neg a$\\ 
+		{\small $a$} & {\small $\neg a$}\\ 
 		\hline
 		$F$ & $V$\\ 
 		\hline
 		$V$ & $F$\\ 
 		\hline
-\end{tabular}\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|}
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.1399\linewidth}|>{\centering\arraybackslash}p{0.1399\linewidth}|>{\centering\arraybackslash}p{0.4199\linewidth}|}
 		\hline
-		$a$ & $b$ & $a\wedge b$\\ 
+		{\small $a$} & {\small $b$} & {\small $a\wedge b$}\\ 
 		\hline
 		$F$ & $F$ & $F$\\ 
 		\hline
@@ -30,11 +30,11 @@
 		\hline
 		$V$ & $V$ & $V$\\ 
 		\hline
-\end{tabular}\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|}
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.1399\linewidth}|>{\centering\arraybackslash}p{0.1399\linewidth}|>{\centering\arraybackslash}p{0.4199\linewidth}|}
 		\hline
-		$a$ & $b$ & $a\vee b$\\ 
+		{\small $a$} & {\small $b$} & {\small $a\vee b$}\\ 
 		\hline
 		$F$ & $F$ & $F$\\ 
 		\hline
@@ -44,11 +44,11 @@
 		\hline
 		$V$ & $V$ & $V$\\ 
 		\hline
-\end{tabular}\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|}
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.1166\linewidth}|>{\centering\arraybackslash}p{0.1166\linewidth}|>{\centering\arraybackslash}p{0.4666\linewidth}|}
 		\hline
-		$a$ & $b$ & $a\implies b$\\ 
+		{\small $a$} & {\small $b$} & {\small $a\Rightarrow b$}\\ 
 		\hline
 		$F$ & $F$ & $V$\\ 
 		\hline
@@ -58,11 +58,11 @@
 		\hline
 		$V$ & $V$ & $V$\\ 
 		\hline
-\end{tabular}\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|}
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.0999\linewidth}|>{\centering\arraybackslash}p{0.0999\linewidth}|>{\centering\arraybackslash}p{0.5\linewidth}|}
 		\hline
-		$a$ & $b$ & $a\iff b$\\ 
+		{\small $a$} & {\small $b$} & {\small $a\Leftrightarrow b$}\\ 
 		\hline
 		$F$ & $F$ & $V$\\ 
 		\hline
@@ -72,11 +72,11 @@
 		\hline
 		$V$ & $V$ & $V$\\ 
 		\hline
-\end{tabular}\end{center}
-\begin{center}
-	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.0137\linewidth}|>{\centering\arraybackslash}p{0.0137\linewidth}|>{\centering\arraybackslash}p{0.0137\linewidth}|>{\centering\arraybackslash}p{0.0686\linewidth}|>{\centering\arraybackslash}p{0.0411\linewidth}|>{\centering\arraybackslash}p{0.0411\linewidth}|>{\centering\arraybackslash}p{0.1784\linewidth}|>{\centering\arraybackslash}p{0.3294\linewidth}|}
 		\hline
-		$a$ & $b$ & $c$ & $a\iff b$ & $c\wedge a$ & $c\wedge b$ & $(c\wedge a)\iff (c\wedge b)$ & $(a\iff b)\implies ((c\wedge a)\iff (c\wedge b))$\\ 
+		{\small $a$} & {\small $b$} & {\small $c$} & {\small $a\Leftrightarrow b$} & {\small $c\wedge a$} & {\small $c\wedge b$} & {\small $(c\wedge a)\Leftrightarrow (c\wedge b)$} & {\small $(a\Leftrightarrow b)\Rightarrow ((c\wedge a)\Leftrightarrow (c\wedge b))$}\\ 
 		\hline
 		$F$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$\\ 
 		\hline
@@ -94,5 +94,85 @@
 		\hline
 		$V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$\\ 
 		\hline
-\end{tabular}\end{center}
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.0145\linewidth}|>{\centering\arraybackslash}p{0.0145\linewidth}|>{\centering\arraybackslash}p{0.0145\linewidth}|>{\centering\arraybackslash}p{0.0291\linewidth}|>{\centering\arraybackslash}p{0.0583\linewidth}|>{\centering\arraybackslash}p{0.1166\linewidth}|>{\centering\arraybackslash}p{0.1458\linewidth}|>{\centering\arraybackslash}p{0.0437\linewidth}|>{\centering\arraybackslash}p{0.2625\linewidth}|}
+		\hline
+		{\small $q$} & {\small $r$} & {\small $p$} & {\small $\neg q$} & {\small $\neg q\wedge r$} & {\small $(\neg q\wedge r)\vee p$} & {\small $(\neg q\wedge r)\vee p\vee q$} & {\small $p\vee r$} & {\small $((\neg q\wedge r)\vee p\vee q)\wedge (p\vee r)$}\\ 
+		\hline
+		$F$ & $F$ & $F$ & $V$ & $F$ & $F$ & $F$ & $F$ & $F$\\ 
+		\hline
+		$F$ & $F$ & $V$ & $V$ & $F$ & $V$ & $V$ & $V$ & $V$\\ 
+		\hline
+		$F$ & $V$ & $F$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$\\ 
+		\hline
+		$F$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$\\ 
+		\hline
+		$V$ & $F$ & $F$ & $F$ & $F$ & $F$ & $V$ & $F$ & $F$\\ 
+		\hline
+		$V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$ & $V$ & $V$\\ 
+		\hline
+		$V$ & $V$ & $F$ & $F$ & $F$ & $F$ & $V$ & $V$ & $V$\\ 
+		\hline
+		$V$ & $V$ & $V$ & $F$ & $F$ & $V$ & $V$ & $V$ & $V$\\ 
+		\hline
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.0189\linewidth}|>{\centering\arraybackslash}p{0.0189\linewidth}|>{\centering\arraybackslash}p{0.0378\linewidth}|>{\centering\arraybackslash}p{0.0756\linewidth}|>{\centering\arraybackslash}p{0.1324\linewidth}|>{\centering\arraybackslash}p{0.0378\linewidth}|>{\centering\arraybackslash}p{0.0756\linewidth}|>{\centering\arraybackslash}p{0.3027\linewidth}|}
+		\hline
+		{\small $p$} & {\small $q$} & {\small $\neg q$} & {\small $p\wedge \neg q$} & {\small $\neg (q\vee \neg p)$} & {\small $\neg p$} & {\small $q\vee \neg p$} & {\small $(p\wedge \neg q)\wedge (\neg (q\vee \neg p))$}\\ 
+		\hline
+		$F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		\hline
+		$F$ & $V$ & $F$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $F$ & $V$\\ 
+		\hline
+		$V$ & $V$ & $F$ & $F$ & $F$ & $F$ & $V$ & $F$\\ 
+		\hline
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.0061\linewidth}|>{\centering\arraybackslash}p{0.0061\linewidth}|>{\centering\arraybackslash}p{0.0061\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.0309\linewidth}|>{\centering\arraybackslash}p{0.0371\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.0991\linewidth}|>{\centering\arraybackslash}p{0.0371\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.1548\linewidth}|>{\centering\arraybackslash}p{0.0371\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.2106\linewidth}|}
+		\hline
+		{\small $q$} & {\small $r$} & {\small $s$} & {\small $q\vee r$} & {\small $q\vee r\vee s$} & {\small $\neg (q\vee r)$} & {\small $q\vee r$} & {\small $(q\vee r\vee s)\wedge (\neg (q\vee r))$} & {\small $\neg (r\vee s)$} & {\small $r\vee s$} & {\small $(q\vee r\vee s)\wedge (\neg (q\vee r))\wedge (\neg (r\vee s))$} & {\small $\neg (s\vee q)$} & {\small $s\vee q$} & {\small $(q\vee r\vee s)\wedge (\neg (q\vee r))\wedge (\neg (r\vee s))\wedge (\neg (s\vee q))$}\\ 
+		\hline
+		$F$ & $F$ & $F$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$\\ 
+		\hline
+		$F$ & $F$ & $V$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		\hline
+		$F$ & $V$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$\\ 
+		\hline
+		$F$ & $V$ & $V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $F$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $V$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $V$ & $V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		\hline
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.0061\linewidth}|>{\centering\arraybackslash}p{0.0061\linewidth}|>{\centering\arraybackslash}p{0.0061\linewidth}|>{\centering\arraybackslash}p{0.0371\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.0371\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.1053\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.1424\linewidth}|>{\centering\arraybackslash}p{0.0495\linewidth}|>{\centering\arraybackslash}p{0.0123\linewidth}|>{\centering\arraybackslash}p{0.0309\linewidth}|>{\centering\arraybackslash}p{0.2106\linewidth}|}
+		\hline
+		{\small $p$} & {\small $q$} & {\small $r$} & {\small $\neg (p\wedge q)$} & {\small $p\wedge q$} & {\small $\neg (p\wedge r)$} & {\small $p\wedge r$} & {\small $(\neg (p\wedge q))\wedge (\neg (p\wedge r))$} & {\small $q\vee r$} & {\small $(\neg (p\wedge q))\wedge (\neg (p\wedge r))\wedge (q\vee r)$} & {\small $\neg (p\Rightarrow \neg r)$} & {\small $\neg r$} & {\small $p\Rightarrow \neg r$} & {\small $(\neg (p\wedge q))\wedge (\neg (p\wedge r))\wedge (q\vee r)\wedge (\neg (p\Rightarrow \neg r))$}\\ 
+		\hline
+		$F$ & $F$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		\hline
+		$F$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		\hline
+		$F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $V$ & $V$ & $F$\\ 
+		\hline
+		$F$ & $V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $F$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $F$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$\\ 
+		\hline
+		$V$ & $V$ & $F$ & $F$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		\hline
+		$V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$\\ 
+		\hline
+	\end{longtable}\end{center}
 \end{document}
