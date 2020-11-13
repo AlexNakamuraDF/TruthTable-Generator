@@ -12,9 +12,9 @@
 		\hline
 		{\small $a$} & {\small $\neg a$}\\ 
 		\hline
-		$F$ & $V$\\ 
+		$0$ & $1$\\ 
 		\hline
-		$V$ & $F$\\ 
+		$1$ & $0$\\ 
 		\hline
 	\end{longtable}\end{center}
 	\begin{center}
@@ -22,13 +22,13 @@
 		\hline
 		{\small $a$} & {\small $b$} & {\small $a\wedge b$}\\ 
 		\hline
-		$F$ & $F$ & $F$\\ 
+		$0$ & $0$ & $0$\\ 
 		\hline
-		$F$ & $V$ & $F$\\ 
+		$0$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $F$ & $F$\\ 
+		$1$ & $0$ & $0$\\ 
 		\hline
-		$V$ & $V$ & $V$\\ 
+		$1$ & $1$ & $1$\\ 
 		\hline
 	\end{longtable}\end{center}
 	\begin{center}
@@ -36,13 +36,13 @@
 		\hline
 		{\small $a$} & {\small $b$} & {\small $a\vee b$}\\ 
 		\hline
-		$F$ & $F$ & $F$\\ 
+		$0$ & $0$ & $0$\\ 
 		\hline
-		$F$ & $V$ & $V$\\ 
+		$0$ & $1$ & $1$\\ 
 		\hline
-		$V$ & $F$ & $V$\\ 
+		$1$ & $0$ & $1$\\ 
 		\hline
-		$V$ & $V$ & $V$\\ 
+		$1$ & $1$ & $1$\\ 
 		\hline
 	\end{longtable}\end{center}
 	\begin{center}
@@ -50,13 +50,13 @@
 		\hline
 		{\small $a$} & {\small $b$} & {\small $a\Rightarrow b$}\\ 
 		\hline
-		$F$ & $F$ & $V$\\ 
+		$0$ & $0$ & $1$\\ 
 		\hline
-		$F$ & $V$ & $V$\\ 
+		$0$ & $1$ & $1$\\ 
 		\hline
-		$V$ & $F$ & $F$\\ 
+		$1$ & $0$ & $0$\\ 
 		\hline
-		$V$ & $V$ & $V$\\ 
+		$1$ & $1$ & $1$\\ 
 		\hline
 	\end{longtable}\end{center}
 	\begin{center}
@@ -64,13 +64,13 @@
 		\hline
 		{\small $a$} & {\small $b$} & {\small $a\Leftrightarrow b$}\\ 
 		\hline
-		$F$ & $F$ & $V$\\ 
+		$0$ & $0$ & $1$\\ 
 		\hline
-		$F$ & $V$ & $F$\\ 
+		$0$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $F$ & $F$\\ 
+		$1$ & $0$ & $0$\\ 
 		\hline
-		$V$ & $V$ & $V$\\ 
+		$1$ & $1$ & $1$\\ 
 		\hline
 	\end{longtable}\end{center}
 	\begin{center}
@@ -78,21 +78,21 @@
 		\hline
 		{\small $a$} & {\small $b$} & {\small $c$} & {\small $a\Leftrightarrow b$} & {\small $c\wedge a$} & {\small $c\wedge b$} & {\small $(c\wedge a)\Leftrightarrow (c\wedge b)$} & {\small $(a\Leftrightarrow b)\Rightarrow ((c\wedge a)\Leftrightarrow (c\wedge b))$}\\ 
 		\hline
-		$F$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$\\ 
+		$0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $1$\\ 
 		\hline
-		$F$ & $F$ & $V$ & $V$ & $F$ & $F$ & $V$ & $V$\\ 
+		$0$ & $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$\\ 
 		\hline
-		$F$ & $V$ & $F$ & $F$ & $F$ & $F$ & $V$ & $V$\\ 
+		$0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $1$ & $1$\\ 
 		\hline
-		$F$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$ & $V$\\ 
+		$0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $1$\\ 
 		\hline
-		$V$ & $F$ & $F$ & $F$ & $F$ & $F$ & $V$ & $V$\\ 
+		$1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ & $1$\\ 
 		\hline
-		$V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$\\ 
+		$1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $1$\\ 
 		\hline
-		$V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$\\ 
+		$1$ & $1$ & $0$ & $1$ & $0$ & $0$ & $1$ & $1$\\ 
 		\hline
-		$V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$\\ 
+		$1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\ 
 		\hline
 	\end{longtable}\end{center}
 	\begin{center}
@@ -100,21 +100,21 @@
 		\hline
 		{\small $q$} & {\small $r$} & {\small $p$} & {\small $\neg q$} & {\small $\neg q\wedge r$} & {\small $(\neg q\wedge r)\vee p$} & {\small $(\neg q\wedge r)\vee p\vee q$} & {\small $p\vee r$} & {\small $((\neg q\wedge r)\vee p\vee q)\wedge (p\vee r)$}\\ 
 		\hline
-		$F$ & $F$ & $F$ & $V$ & $F$ & $F$ & $F$ & $F$ & $F$\\ 
+		$0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$\\ 
 		\hline
-		$F$ & $F$ & $V$ & $V$ & $F$ & $V$ & $V$ & $V$ & $V$\\ 
+		$0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$\\ 
 		\hline
-		$F$ & $V$ & $F$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$\\ 
+		$0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\ 
 		\hline
-		$F$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$ & $V$\\ 
+		$0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\ 
 		\hline
-		$V$ & $F$ & $F$ & $F$ & $F$ & $F$ & $V$ & $F$ & $F$\\ 
+		$1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$\\ 
 		\hline
-		$V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$ & $V$ & $V$\\ 
+		$1$ & $0$ & $1$ & $0$ & $0$ & $1$ & $1$ & $1$ & $1$\\ 
 		\hline
-		$V$ & $V$ & $F$ & $F$ & $F$ & $F$ & $V$ & $V$ & $V$\\ 
+		$1$ & $1$ & $0$ & $0$ & $0$ & $0$ & $1$ & $1$ & $1$\\ 
 		\hline
-		$V$ & $V$ & $V$ & $F$ & $F$ & $V$ & $V$ & $V$ & $V$\\ 
+		$1$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$ & $1$ & $1$\\ 
 		\hline
 	\end{longtable}\end{center}
 	\begin{center}
@@ -122,35 +122,35 @@
 		\hline
 		{\small $p$} & {\small $q$} & {\small $\neg q$} & {\small $p\wedge \neg q$} & {\small $\neg (q\vee \neg p)$} & {\small $\neg p$} & {\small $q\vee \neg p$} & {\small $(p\wedge \neg q)\wedge (\neg (q\vee \neg p))$}\\ 
 		\hline
-		$F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		$0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $1$ & $0$\\ 
 		\hline
-		$F$ & $V$ & $F$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		$0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $F$ & $V$\\ 
+		$1$ & $0$ & $1$ & $1$ & $1$ & $0$ & $0$ & $1$\\ 
 		\hline
-		$V$ & $V$ & $F$ & $F$ & $F$ & $F$ & $V$ & $F$\\ 
+		$1$ & $1$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$\\ 
 		\hline
 	\end{longtable}\end{center}
 	\begin{center}
-	\begin{longtable}{|>{\centering\arraybackslash}p{0.0061\linewidth}|>{\centering\arraybackslash}p{0.0061\linewidth}|>{\centering\arraybackslash}p{0.0061\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.0309\linewidth}|>{\centering\arraybackslash}p{0.0371\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.0991\linewidth}|>{\centering\arraybackslash}p{0.0371\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.1548\linewidth}|>{\centering\arraybackslash}p{0.0371\linewidth}|>{\centering\arraybackslash}p{0.0185\linewidth}|>{\centering\arraybackslash}p{0.2106\linewidth}|}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.0063\linewidth}|>{\centering\arraybackslash}p{0.0063\linewidth}|>{\centering\arraybackslash}p{0.0063\linewidth}|>{\centering\arraybackslash}p{0.019\linewidth}|>{\centering\arraybackslash}p{0.0318\linewidth}|>{\centering\arraybackslash}p{0.0381\linewidth}|>{\centering\arraybackslash}p{0.1018\linewidth}|>{\centering\arraybackslash}p{0.0381\linewidth}|>{\centering\arraybackslash}p{0.019\linewidth}|>{\centering\arraybackslash}p{0.159\linewidth}|>{\centering\arraybackslash}p{0.0381\linewidth}|>{\centering\arraybackslash}p{0.019\linewidth}|>{\centering\arraybackslash}p{0.2163\linewidth}|}
 		\hline
-		{\small $q$} & {\small $r$} & {\small $s$} & {\small $q\vee r$} & {\small $q\vee r\vee s$} & {\small $\neg (q\vee r)$} & {\small $q\vee r$} & {\small $(q\vee r\vee s)\wedge (\neg (q\vee r))$} & {\small $\neg (r\vee s)$} & {\small $r\vee s$} & {\small $(q\vee r\vee s)\wedge (\neg (q\vee r))\wedge (\neg (r\vee s))$} & {\small $\neg (s\vee q)$} & {\small $s\vee q$} & {\small $(q\vee r\vee s)\wedge (\neg (q\vee r))\wedge (\neg (r\vee s))\wedge (\neg (s\vee q))$}\\ 
+		{\small $q$} & {\small $r$} & {\small $s$} & {\small $q\vee r$} & {\small $q\vee r\vee s$} & {\small $\neg (q\vee r)$} & {\small $(q\vee r\vee s)\wedge (\neg (q\vee r))$} & {\small $\neg (r\vee s)$} & {\small $r\vee s$} & {\small $(q\vee r\vee s)\wedge (\neg (q\vee r))\wedge (\neg (r\vee s))$} & {\small $\neg (s\vee q)$} & {\small $s\vee q$} & {\small $(q\vee r\vee s)\wedge (\neg (q\vee r))\wedge (\neg (r\vee s))\wedge (\neg (s\vee q))$}\\ 
 		\hline
-		$F$ & $F$ & $F$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$\\ 
+		$0$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $1$ & $0$ & $0$\\ 
 		\hline
-		$F$ & $F$ & $V$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		$0$ & $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $0$ & $1$ & $0$\\ 
 		\hline
-		$F$ & $V$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$\\ 
+		$0$ & $1$ & $0$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$\\ 
 		\hline
-		$F$ & $V$ & $V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		$0$ & $1$ & $1$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $F$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$ & $V$ & $F$\\ 
+		$1$ & $0$ & $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		$1$ & $0$ & $1$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $V$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		$1$ & $1$ & $0$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $V$ & $V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		$1$ & $1$ & $1$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $0$\\ 
 		\hline
 	\end{longtable}\end{center}
 	\begin{center}
@@ -158,21 +158,59 @@
 		\hline
 		{\small $p$} & {\small $q$} & {\small $r$} & {\small $\neg (p\wedge q)$} & {\small $p\wedge q$} & {\small $\neg (p\wedge r)$} & {\small $p\wedge r$} & {\small $(\neg (p\wedge q))\wedge (\neg (p\wedge r))$} & {\small $q\vee r$} & {\small $(\neg (p\wedge q))\wedge (\neg (p\wedge r))\wedge (q\vee r)$} & {\small $\neg (p\Rightarrow \neg r)$} & {\small $\neg r$} & {\small $p\Rightarrow \neg r$} & {\small $(\neg (p\wedge q))\wedge (\neg (p\wedge r))\wedge (q\vee r)\wedge (\neg (p\Rightarrow \neg r))$}\\ 
 		\hline
-		$F$ & $F$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		$0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $0$\\ 
 		\hline
-		$F$ & $F$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		$0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$\\ 
 		\hline
-		$F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $V$ & $V$ & $F$\\ 
+		$0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $1$ & $0$\\ 
 		\hline
-		$F$ & $V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$\\ 
+		$0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $F$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		$1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $F$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$\\ 
+		$1$ & $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$\\ 
 		\hline
-		$V$ & $V$ & $F$ & $F$ & $V$ & $V$ & $F$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$ & $F$\\ 
+		$1$ & $1$ & $0$ & $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$ & $1$ & $0$\\ 
 		\hline
-		$V$ & $V$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $V$ & $F$ & $F$ & $F$\\ 
+		$1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$\\ 
+		\hline
+	\end{longtable}\end{center}
+	\begin{center}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.0069\linewidth}|>{\centering\arraybackslash}p{0.0069\linewidth}|>{\centering\arraybackslash}p{0.0069\linewidth}|>{\centering\arraybackslash}p{0.0069\linewidth}|>{\centering\arraybackslash}p{0.0139\linewidth}|>{\centering\arraybackslash}p{0.035\linewidth}|>{\centering\arraybackslash}p{0.0139\linewidth}|>{\centering\arraybackslash}p{0.035\linewidth}|>{\centering\arraybackslash}p{0.105\linewidth}|>{\centering\arraybackslash}p{0.035\linewidth}|>{\centering\arraybackslash}p{0.1609\linewidth}|>{\centering\arraybackslash}p{0.035\linewidth}|>{\centering\arraybackslash}p{0.2379\linewidth}|}
+		\hline
+		{\small $B$} & {\small $L$} & {\small $D$} & {\small $M$} & {\small $\neg L$} & {\small $B\Rightarrow \neg L$} & {\small $\neg M$} & {\small $D\Rightarrow \neg M$} & {\small $(B\Rightarrow \neg L)\wedge (D\Rightarrow \neg M)$} & {\small $\neg L\Rightarrow D$} & {\small $(B\Rightarrow \neg L)\wedge (D\Rightarrow \neg M)\wedge (\neg L\Rightarrow D)$} & {\small $B\Rightarrow \neg M$} & {\small $((B\Rightarrow \neg L)\wedge (D\Rightarrow \neg M)\wedge (\neg L\Rightarrow D))\Rightarrow (B\Rightarrow \neg M)$}\\ 
+		\hline
+		$0$ & $0$ & $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$\\ 
+		\hline
+		$0$ & $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$\\ 
+		\hline
+		$0$ & $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\ 
+		\hline
+		$0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $1$\\ 
+		\hline
+		$0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\ 
+		\hline
+		$0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\ 
+		\hline
+		$0$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\ 
+		\hline
+		$0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $1$\\ 
+		\hline
+		$1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $0$ & $0$ & $1$ & $1$\\ 
+		\hline
+		$1$ & $0$ & $0$ & $1$ & $1$ & $1$ & $0$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$\\ 
+		\hline
+		$1$ & $0$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\ 
+		\hline
+		$1$ & $0$ & $1$ & $1$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$\\ 
+		\hline
+		$1$ & $1$ & $0$ & $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ & $1$\\ 
+		\hline
+		$1$ & $1$ & $0$ & $1$ & $0$ & $0$ & $0$ & $1$ & $0$ & $1$ & $0$ & $0$ & $1$\\ 
+		\hline
+		$1$ & $1$ & $1$ & $0$ & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ & $0$ & $1$ & $1$\\ 
+		\hline
+		$1$ & $1$ & $1$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $1$\\ 
 		\hline
 	\end{longtable}\end{center}
 \end{document}
